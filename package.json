@@ -4,7 +4,7 @@
   "description": "Primer Proyecto con Node.js y Express",
   "license": "ISC",
   "author": "Christian Emanuel Flores",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js"
