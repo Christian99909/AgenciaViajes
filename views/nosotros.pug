@@ -1,6 +1,30 @@
 extends ./layout/index
 
 block contenido
-    p Nosotros
+    main.container.mt-5 
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Imagen nosotros", class="img-fluid")
 
-    
+            .col-md-7
+                h1 #{pagina}
+                blockquote Mauris eget lectus odio. Nunc ut faucibus risus, a tincidunt turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed efficitur malesuada velit placerat tristique. Praesent vestibulum ante ut imperdiet interdum. Praesent sed velit non ante tristique ullamcorper. Integer vulputate bibendum congue. Ut ac dignissim turpis, vitae vulputate magna. Nullam id sem leo. 
+                p Sed et vehicula ligula, at mattis enim. Suspendisse fermentum quis turpis nec gravida. Nam congue lorem in bibendum scelerisque. Nunc sit amet sem hendrerit, cursus turpis vel, malesuada erat. In ac est ut orci ornare suscipit. In hac habitasse platea dictumst. Praesent at mattis ligula. Nulla auctor elementum consequat. Mauris accumsan nisl odio. Nam fermentum mattis maximus. Aenean euismod sed lacus ut vestibulum.
+
+                p Aenean quis scelerisque neque, non pellentesque arcu. Mauris vel erat eu orci fermentum vulputate quis tincidunt felis. Praesent tincidunt mauris vel hendrerit blandit. Donec congue, tellus sit amet lobortis accumsan, eros tortor luctus turpis, sit amet dictum magna felis laoreet lorem. Vestibulum sollicitudin mollis sem eu mattis. Pellentesque eu libero laoreet, aliquam lectus eget, dictum nisl. 
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Vestibulum sollicitudin mollis sem eu mattis. Pellentesque eu libero laoreet, aliquam lectus eget, dictum nisl. 
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destino", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Vestibulum sollicitudin mollis sem eu mattis. Pellentesque eu libero laoreet, aliquam lectus eget, dictum nisl. 
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono precio", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios 
+                    p Vestibulum sollicitudin mollis sem eu mattis. Pellentesque eu libero laoreet, aliquam lectus eget, dictum nisl. 
