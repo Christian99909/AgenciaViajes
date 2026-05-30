@@ -23,12 +23,17 @@ const guardarTestimonial = async (req, res) => { //req - lo que enviamos : res -
 
     if (errores.length > 0) {
 
+        //Consultar testimoniales Existentes
+        const testimoniales = await Testimonial.findAll();
+
+        //Mostrar la vista con errores
         res.render('testimoniales', {
             pagina: 'Testimoniales',
             errores,
             nombre,
             correo,
-            mensaje
+            mensaje,
+            testimoniales
         })
         
     }else{
@@ -39,7 +44,9 @@ const guardarTestimonial = async (req, res) => { //req - lo que enviamos : res -
                 nombre,
                 correo,
                 mensaje
-            })
+            });
+
+            res.redirect('/testimoniales')
             
         } catch (error) {
             console.log(error);
